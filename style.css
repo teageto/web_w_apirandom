@@ -1,6 +1,6 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(102, 83, 83);
+    background-color: rgb(32, 18, 18);
     color: whitesmoke;
 }
 
@@ -9,14 +9,27 @@ h1 {
 
 }
 
-.options input[type="radio"]{
-    margin-bottom: 10px;
-    text-align: left;
-    margin: 20%;
-    padding: 20%;
+#product {
+    margin: 100px;
+    margin-top: 50px;
+    margin-right: 105rem;
+    border-radius: 1rem;
+    margin-left: 2rem;
+
 }
 
-#button {
-    padding-inline: 20px;
-    margin-top: 10px;
+.image {
+    padding-bottom: 5rem;
+}
+
+#commingsoon {
+    margin: 100px;
+    margin-top: 50px;
+    margin-right: 105rem;
+    margin-left: 2rem;
+}
+
+.cm {
+    margin-bottom: 0%;
+    margin-left: 2rem;
 }
