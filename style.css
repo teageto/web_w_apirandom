@@ -1,6 +1,6 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(32, 18, 18);
+    background-color: rgb(0, 0, 0);
     color: whitesmoke;
 }
 
@@ -9,27 +9,37 @@ h1 {
 
 }
 
-#product {
-    margin: 100px;
-    margin-top: 50px;
-    margin-right: 105rem;
-    border-radius: 1rem;
-    margin-left: 2rem;
+.product {
+    width: 500px;
+    border-radius: 10px;
+    border: 10px;
+    border-color: whitesmoke;
+    margin-top: 10px;
+}
 
+#container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(400px, 600px));
+    grid-template-rows: repeat(2, 1fr);
+    gap: 5px;
+    justify-content: space-around;
 }
 
 .image {
     padding-bottom: 5rem;
+    background-size: contain;
+    background-position: center;
+    width: 490px;
+    height: 195px;
 }
 
-#commingsoon {
-    margin: 100px;
-    margin-top: 50px;
-    margin-right: 105rem;
-    margin-left: 2rem;
-}
 
 .cm {
     margin-bottom: 0%;
     margin-left: 2rem;
+}
+
+.comson {
+
+    width: 500px;
 }

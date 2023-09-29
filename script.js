@@ -11,16 +11,17 @@ const optionsGratis = {
 fetch(urlGratis, optionsGratis)
  .then(response => response.json())
   .then(data => {
-    console.log(data)
+    console.log(data);
 
-    let product = document.getElementById('product')
+    let product = document.getElementById('product');
     
 
     data.forEach(item => {
-        let div = document.createElement('div')
+        let div = document.createElement('div');
+        div.classList.add('product');
 
         div.innerHTML = `
-                <div class="image" style="background-image: url(${item.offerImageTall}); background-size: contain; background-position: center; width: 100%; height: 150px; margin-left: 0%; margin-bottom: 0%;">
+                <div class="image" style="background-image: url(${item.offerImageTall});">
                 </div>
                 <div class="">
                     <h2 class="" >${item.name}</h2> <h2 class="">${item.discountPrice} ${item.currencyCode}</h2>
@@ -41,20 +42,21 @@ const optionsNext = {
         'X-RapidAPI-Key': 'e62e48f4d2msh7b891d152190852p1f81cdjsn93d4034bb839',
 		'X-RapidAPI-Host': 'epic-free-games.p.rapidapi.com'
     }
-}
+};
 
 fetch(urlNext, optionsNext)
     .then(response => response.json())
     .then(data => {
-        console.log(data)
+        console.log(data);
 
-        let commingsoon = document.getElementById('commingsoon')
+        let commingsoon = document.getElementById('commingsoon');
 
         data.forEach(item => {
-            let div = document.createElement('div')
+            let div = document.createElement('div');
+            div.classList.add('comson');
     
             div.innerHTML = `
-                    <div class="image" style="background-image: url(${item.offerImageTall}); background-size: contain; background-position: center; width: 100%; height: 150px;">
+                    <div class="image" style="background-image: url(${item.offerImageWide});">
                     </div>
                     <div class="">
                         <h2 class="" >${item.name}</h2> <h2 class="">${item.discountPrice} ${item.currencyCode}</h2>
